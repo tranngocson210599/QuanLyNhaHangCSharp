@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing.Printing;
 namespace BT6
 {
     public partial class BaiTap6 : Form
     {
+       
         public BaiTap6()
         {
             InitializeComponent();
@@ -85,17 +86,12 @@ namespace BT6
             button18.Visible = false;
             button19.Visible = false;
             button20.Visible = false;
-
-          //  button21.Visible = true;
             button22.Visible = true;
-            //button23.Visible = true;
-           // button24.Visible = true;
             button25.Visible = true;
             button26.Visible = true;
             button27.Visible = true;
             button28.Visible = true;
             button29.Visible = true;
-         //   button9.Visible = true;
             button10.Visible = true;
             button11.Visible = true;
            
@@ -124,23 +120,17 @@ namespace BT6
             button18.Visible = false;
             button19.Visible = false;
             button20.Visible = false;
-        //    button21.Visible = false;
             button22.Visible = false;
-         //   button23.Visible = false;
-         //   button24.Visible = false;
             button25.Visible = false;
             button26.Visible = false;
             button27.Visible = false;
             button28.Visible = false;
             button29.Visible = false;
-         //   button9.Visible = false;
             button10.Visible = false;
             button11.Visible = false;
             button30.Visible = true;
             button31.Visible = true;
-           
             button33.Visible = true;
-          
             button35.Visible = true;
             button36.Visible = true;
             button37.Visible = false;
@@ -195,16 +185,15 @@ namespace BT6
             button18.Visible = false;
             button19.Visible = false;
             button20.Visible = false;
-          //  button21.Visible = false;
+        
             button22.Visible = false;
-            //button23.Visible = false;
-           // button24.Visible = false;
+            
             button25.Visible = false;
             button26.Visible = false;
             button27.Visible = false;
             button28.Visible = false;
             button29.Visible = false;
-          //  button9.Visible = false;
+        
             button10.Visible = false;
             button11.Visible = false;
             button30.Visible = false;
@@ -228,17 +217,7 @@ namespace BT6
           
         }
 
-        private void button24_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà thải độc", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+      
 
         private void button29_Click(object sender, EventArgs e)
         {
@@ -278,18 +257,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button23_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà oải hương", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
+      
         private void button27_Click(object sender, EventArgs e)
         {
             string SL = "1";
@@ -347,29 +315,9 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button48_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
+        
 
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Topping khúc bạch", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa việt quất", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+    
 
         private void button37_Click(object sender, EventArgs e)
         {
@@ -409,29 +357,9 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
+      
 
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà Cozy", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
-        private void button44_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Topping rau câu", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+       
 
         private void button38_Click(object sender, EventArgs e)
         {
@@ -510,18 +438,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button45_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Phô mai thạch", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
+       
         private void button39_Click(object sender, EventArgs e)
         {
             string SL = "1";
@@ -541,18 +458,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button32_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Soda chanh dây", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
+       
         private void button11_Click(object sender, EventArgs e)
         {
             string SL = "1";
@@ -560,7 +466,7 @@ namespace BT6
 
             string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
 
-            string[] row = new string[] { " súp hải sản", SL, DonGia, ThanhTien };
+            string[] row = new string[] { "Súp hải sản", SL, DonGia, ThanhTien };
 
             if (dataGridView1.Visible == true)
                 dataGridView1.Rows.Add(row);
@@ -572,29 +478,9 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
+     
 
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa Socola", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
-        private void button46_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Thạch củ năng", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+     
 
         private void button40_Click(object sender, EventArgs e)
         {
@@ -672,17 +558,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button47_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Pudding", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+       
 
         private void button41_Click(object sender, EventArgs e)
         {
@@ -703,41 +579,11 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button34_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
+      
 
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
+      
 
-            string[] row = new string[] { "Soda việt quất", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà trái cây", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa bạc hà", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+      
 
         private void button35_Click(object sender, EventArgs e)
         {
@@ -815,17 +661,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa thái xanh", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+      
 
         private void button18_Click(object sender, EventArgs e)
         {
@@ -846,17 +682,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa Nhật", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+       
 
         private void button19_Click(object sender, EventArgs e)
         {
@@ -877,17 +703,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-            string SL = "1";
-            string DonGia = "20000";
-
-            string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-            string[] row = new string[] { "Trà sữa thái đỏ", SL, DonGia, ThanhTien };
-
-            dataGridView1.Rows.Add(row);
-        }
+       
 
         private void button20_Click(object sender, EventArgs e)
         {
@@ -920,9 +736,26 @@ namespace BT6
 
         private void button49_Click(object sender, EventArgs e)
         {
+
+
+
+            // int cout = dataGridView1.Rows.Count;
+            int cout = 0;
             int tong = 0;
-            int cout = dataGridView1.Rows.Count;
-            for(int i=0;i<cout;i++)
+            int cout1 = dataGridView1.Rows.Count;
+            int cout2 = dataGridView2.Rows.Count;
+            int cout3 = dataGridView3.Rows.Count;
+            int cout4 = dataGridView4.Rows.Count;
+            
+            if (dataGridView1.Visible == true)
+                cout = cout1;
+            if (dataGridView2.Visible == true)
+                cout = cout2;
+            if (dataGridView3.Visible == true)
+                cout = cout3;
+            if (dataGridView4.Visible == true)
+                cout = cout4;
+            for (int i=0;i<cout;i++)
             {
                 if (dataGridView1.Visible == true)
                     tong += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
@@ -943,21 +776,22 @@ namespace BT6
         }
 
         private void button51_Click(object sender, EventArgs e)
+
         {
-            richTextBox3.Text = Convert.ToString(Convert.ToInt32(richTextBox1.Text) * (1 - (Convert.ToDouble(richTextBox2.Text) / 100)));
+            try
+            {
+                if(Convert.ToDouble(richTextBox2.Text)>=1&& Convert.ToDouble(richTextBox2.Text)<=100)
+                richTextBox3.Text = Convert.ToString(Convert.ToInt32(richTextBox1.Text) * (1 - (Convert.ToDouble(richTextBox2.Text) / 100)));
+                else
+                    MessageBox.Show("Giảm giá phải lớn hơn bằng 1 và nhỏ hơn bằng 100", "Error");
+            }
+            catch
+            {
+                MessageBox.Show("Giảm giá không đúng", "Error");
+            }
         }
         
-        //private void button43_Click(object sender, EventArgs e)
-        //{
-        //    string SL = "1";
-        //    string DonGia = "20000";
-
-        //    string ThanhTien = Convert.ToString(Convert.ToInt32(SL) * Convert.ToInt32(DonGia));
-
-        //    string[] row = new string[] { "Trân châu", SL, DonGia, ThanhTien };
-
-        //    dataGridView1.Rows.Add(row);
-        //}
+      
 
         private void Bàn1_Click(object sender, EventArgs e)
         {
@@ -1063,6 +897,187 @@ namespace BT6
 
         private void hd2_TextChanged(object sender, EventArgs e)
         {
+
+        }
+        // in hóa đơn
+        private void button52_Click(object sender, EventArgs e)
+        {
+
+            PrintDialog printDialog = new PrintDialog();
+
+            PrintDocument printDocument = new PrintDocument();
+
+            printDialog.Document = printDocument; 
+            printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(MakeBill); 
+
+            DialogResult result = printDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                printDocument.Print();
+
+            }
+            if (dataGridView1.Visible == true)
+            {
+                this.dataGridView1.Rows.Clear();
+                hd1.Text = "";
+                nhanvien1.Text = "";
+                kh1.Text = "";
+
+            }
+            if (dataGridView2.Visible == true)
+            {
+                this.dataGridView1.Rows.Clear();
+                hd1.Text = "";
+                nhanvien1.Text = "";
+                kh1.Text = "";
+            }
+            if (dataGridView3.Visible == true)
+            {
+                this.dataGridView3.Rows.Clear();
+                hd3.Text = "";
+                nhanvien3.Text = "";
+                kh3.Text = "";
+            }
+            if (dataGridView4.Visible == true)
+            {
+                this.dataGridView4.Rows.Clear();
+                hd4.Text = "";
+                nhanvien4.Text = "";
+                kh4.Text = "";
+            }
+            richTextBox3.Text = "";
+            richTextBox2.Text = "";
+            richTextBox1.Text = "";
+
+           
+        }
+        public void MakeBill(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+            Graphics graphic = e.Graphics;
+
+            Font font = new Font("Courier New", 12); 
+
+            float fontHeight = font.GetHeight();
+
+            int startX = 10;
+            int startY = 10;
+            int offset = 40;
+            string tenban="", soHD="", KH="", NV="";
+            graphic.DrawString(" Tran Ngoc Son Restaurant", new Font("Courier New", 18), new SolidBrush(Color.Black), startX, startY);
+            if (dataGridView1.Visible == true)
+            {
+                tenban = "Tên bàn : " + tenban1.Text;
+                soHD = "Số hóa đơn : " + hd1.Text;
+                KH = "Tên khác hàng : " + kh1.Text;
+                NV = "Tên nhân viên phục vụ : " + nhanvien1.Text;
+            }
+            if (dataGridView2.Visible == true)
+            {
+                tenban = "Tên bàn : " + tenban2.Text;
+                soHD = "Số hóa đơn : " + hd2.Text;
+                KH = "Tên khác hàng : " + kh2.Text;
+                NV = "Tên nhân viên phục vụ : " + nhanvien2.Text;
+            }
+
+            if (dataGridView3.Visible == true)
+            {
+                tenban = "Tên bàn : " + tenban3.Text;
+                soHD = "Số hóa đơn : " + hd3.Text;
+                KH = "Tên khác hàng : " + kh3.Text;
+                NV = "Tên nhân viên phục vụ : " + nhanvien3.Text;
+            }
+            if (dataGridView4.Visible == true)
+            {
+                tenban = "Tên bàn : " + tenban4.Text;
+                soHD = "Số hóa đơn : " + hd4.Text;
+                KH = "Tên khác hàng : " + kh4.Text;
+                NV = "Tên nhân viên phục vụ : " + nhanvien4.Text;
+            }
+
+
+
+            string datagridString = "Tên món".PadRight(30) + "Số lượng".PadRight(10) + "Đơn giá".PadRight(10) + "Thành tiền";
+
+
+           // string top = "Item Name".PadRight(30) + "Price";
+            graphic.DrawString(tenban, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(soHD, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(KH, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(NV, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString("-----------------------------------------------", font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(datagridString, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            string tmp="";
+            
+
+            int cout = 0;
+            int cout1 = dataGridView1.Rows.Count;
+            int cout2 = dataGridView2.Rows.Count;
+            int cout3 = dataGridView3.Rows.Count;
+            int cout4 = dataGridView4.Rows.Count;
+            if (dataGridView1.Visible == true)
+                cout = cout1;
+            if (dataGridView2.Visible == true)
+                cout = cout2;
+            if (dataGridView3.Visible == true)
+                cout = cout3;
+            if (dataGridView4.Visible == true)
+                cout = cout4;
+            for (int i=0;i< cout; i++)
+            {
+                if(dataGridView1.Visible==true)
+                {
+                    tmp = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value).PadRight(30)
+                   + Convert.ToString(dataGridView1.Rows[i].Cells[1].Value).PadRight(10)
+                   + Convert.ToString(dataGridView1.Rows[i].Cells[2].Value).PadRight(10)
+                   + Convert.ToString(dataGridView1.Rows[i].Cells[3].Value).PadRight(10);
+                }
+                if (dataGridView2.Visible == true)
+                {
+                    tmp = Convert.ToString(dataGridView2.Rows[i].Cells[0].Value).PadRight(30)
+                   + Convert.ToString(dataGridView2.Rows[i].Cells[1].Value).PadRight(10)
+                   + Convert.ToString(dataGridView2.Rows[i].Cells[2].Value).PadRight(10)
+                   + Convert.ToString(dataGridView2.Rows[i].Cells[3].Value).PadRight(10);
+                }
+                if (dataGridView3.Visible == true)
+                {
+                    tmp = Convert.ToString(dataGridView3.Rows[i].Cells[0].Value).PadRight(30)
+                   + Convert.ToString(dataGridView3.Rows[i].Cells[1].Value).PadRight(10)
+                   + Convert.ToString(dataGridView3.Rows[i].Cells[2].Value).PadRight(10)
+                   + Convert.ToString(dataGridView3.Rows[i].Cells[3].Value).PadRight(10);
+                }
+                if (dataGridView4.Visible == true)
+                {
+                    tmp = Convert.ToString(dataGridView4.Rows[i].Cells[0].Value).PadRight(30)
+                   + Convert.ToString(dataGridView4.Rows[i].Cells[1].Value).PadRight(10)
+                   + Convert.ToString(dataGridView4.Rows[i].Cells[2].Value).PadRight(10)
+                   + Convert.ToString(dataGridView4.Rows[i].Cells[3].Value).PadRight(10);
+                }
+                graphic.DrawString(tmp, font, new SolidBrush(Color.Black), startX, startY + offset);
+                startY += 30;
+            }
+
+            string TienHang, GiamGia, TongTien;
+            TienHang = "Tiền hàng : "+richTextBox1.Text;
+            GiamGia = "Giảm giá :" + richTextBox2.Text+"%";
+            TongTien = "Tổng tiền :" + richTextBox3.Text;
+
+            graphic.DrawString(TienHang, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(GiamGia, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString(TongTien, font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString("                 Cảm ơn quý khách", font, new SolidBrush(Color.Black), startX, startY + offset);
+            startY += 30;
+            graphic.DrawString("                 Hẹn gặp lại", font, new SolidBrush(Color.Black), startX, startY + offset);
 
         }
     }
