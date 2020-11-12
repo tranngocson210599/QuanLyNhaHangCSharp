@@ -115,6 +115,23 @@
             this.tenban4 = new System.Windows.Forms.RichTextBox();
             this.tenban3 = new System.Windows.Forms.RichTextBox();
             this.tenban2 = new System.Windows.Forms.RichTextBox();
+            this.dongia1 = new System.Windows.Forms.RichTextBox();
+            this.sl1 = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.mon1 = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.mon2 = new System.Windows.Forms.RichTextBox();
+            this.mon3 = new System.Windows.Forms.RichTextBox();
+            this.mon4 = new System.Windows.Forms.RichTextBox();
+            this.sl2 = new System.Windows.Forms.RichTextBox();
+            this.sl3 = new System.Windows.Forms.RichTextBox();
+            this.sl4 = new System.Windows.Forms.RichTextBox();
+            this.dongia2 = new System.Windows.Forms.RichTextBox();
+            this.dongia3 = new System.Windows.Forms.RichTextBox();
+            this.dongia4 = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -130,7 +147,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(484, 38);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(312, 475);
+            this.listView1.Size = new System.Drawing.Size(327, 536);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
@@ -220,7 +237,7 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(355, 38);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(123, 475);
+            this.listView2.Size = new System.Drawing.Size(123, 536);
             this.listView2.TabIndex = 35;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
@@ -281,14 +298,14 @@
             this.listView4.HideSelection = false;
             this.listView4.Location = new System.Drawing.Point(12, 12);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(337, 501);
+            this.listView4.Size = new System.Drawing.Size(337, 562);
             this.listView4.TabIndex = 42;
             this.listView4.UseCompatibleStateImageBehavior = false;
             // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(100, 370);
+            this.richTextBox1.Location = new System.Drawing.Point(100, 464);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(123, 31);
             this.richTextBox1.TabIndex = 46;
@@ -298,7 +315,7 @@
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(100, 409);
+            this.richTextBox2.Location = new System.Drawing.Point(100, 501);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(123, 31);
             this.richTextBox2.TabIndex = 47;
@@ -308,7 +325,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(100, 448);
+            this.richTextBox3.Location = new System.Drawing.Point(100, 538);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(123, 25);
             this.richTextBox3.TabIndex = 48;
@@ -593,7 +610,7 @@
             // 
             this.button49.BackColor = System.Drawing.Color.Blue;
             this.button49.ForeColor = System.Drawing.Color.White;
-            this.button49.Location = new System.Drawing.Point(16, 371);
+            this.button49.Location = new System.Drawing.Point(16, 465);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(78, 31);
             this.button49.TabIndex = 81;
@@ -605,7 +622,7 @@
             // 
             this.button50.BackColor = System.Drawing.Color.Blue;
             this.button50.ForeColor = System.Drawing.Color.White;
-            this.button50.Location = new System.Drawing.Point(16, 411);
+            this.button50.Location = new System.Drawing.Point(16, 502);
             this.button50.Name = "button50";
             this.button50.Size = new System.Drawing.Size(78, 31);
             this.button50.TabIndex = 82;
@@ -616,7 +633,7 @@
             // 
             this.button51.BackColor = System.Drawing.Color.Blue;
             this.button51.ForeColor = System.Drawing.Color.White;
-            this.button51.Location = new System.Drawing.Point(16, 448);
+            this.button51.Location = new System.Drawing.Point(16, 539);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(78, 25);
             this.button51.TabIndex = 83;
@@ -638,7 +655,7 @@
             // 
             this.button52.BackColor = System.Drawing.Color.Blue;
             this.button52.ForeColor = System.Drawing.Color.White;
-            this.button52.Location = new System.Drawing.Point(246, 440);
+            this.button52.Location = new System.Drawing.Point(258, 495);
             this.button52.Name = "button52";
             this.button52.Size = new System.Drawing.Size(75, 44);
             this.button52.TabIndex = 85;
@@ -654,7 +671,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(355, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(441, 23);
+            this.label2.Size = new System.Drawing.Size(456, 23);
             this.label2.TabIndex = 87;
             this.label2.Text = "                                       THỰC ĐƠN";
             // 
@@ -664,9 +681,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(802, 38);
+            this.listView3.Location = new System.Drawing.Point(817, 38);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(238, 475);
+            this.listView3.Size = new System.Drawing.Size(238, 536);
             this.listView3.TabIndex = 88;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
@@ -675,7 +692,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(802, 12);
+            this.label3.Location = new System.Drawing.Point(817, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(238, 23);
             this.label3.TabIndex = 90;
@@ -727,7 +744,7 @@
             this.ban1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ban1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ban1.ForeColor = System.Drawing.Color.White;
-            this.ban1.Location = new System.Drawing.Point(802, 38);
+            this.ban1.Location = new System.Drawing.Point(817, 38);
             this.ban1.Name = "ban1";
             this.ban1.Size = new System.Drawing.Size(126, 59);
             this.ban1.TabIndex = 95;
@@ -741,7 +758,7 @@
             this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button55.ForeColor = System.Drawing.Color.White;
-            this.button55.Location = new System.Drawing.Point(923, 38);
+            this.button55.Location = new System.Drawing.Point(938, 38);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(117, 59);
             this.button55.TabIndex = 96;
@@ -755,7 +772,7 @@
             this.ban3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ban3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ban3.ForeColor = System.Drawing.Color.White;
-            this.ban3.Location = new System.Drawing.Point(802, 95);
+            this.ban3.Location = new System.Drawing.Point(817, 95);
             this.ban3.Name = "ban3";
             this.ban3.Size = new System.Drawing.Size(126, 59);
             this.ban3.TabIndex = 97;
@@ -769,7 +786,7 @@
             this.ban4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ban4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ban4.ForeColor = System.Drawing.Color.White;
-            this.ban4.Location = new System.Drawing.Point(923, 95);
+            this.ban4.Location = new System.Drawing.Point(938, 95);
             this.ban4.Name = "ban4";
             this.ban4.Size = new System.Drawing.Size(117, 59);
             this.ban4.TabIndex = 98;
@@ -791,6 +808,7 @@
             this.dataGridView2.RowHeadersWidth = 4;
             this.dataGridView2.Size = new System.Drawing.Size(333, 173);
             this.dataGridView2.TabIndex = 99;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -826,6 +844,8 @@
             this.dataGridView3.RowHeadersWidth = 4;
             this.dataGridView3.Size = new System.Drawing.Size(333, 173);
             this.dataGridView3.TabIndex = 100;
+            this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellValueChanged);
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -861,6 +881,8 @@
             this.dataGridView4.RowHeadersWidth = 4;
             this.dataGridView4.Size = new System.Drawing.Size(333, 173);
             this.dataGridView4.TabIndex = 101;
+            this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -1030,11 +1052,190 @@
             this.tenban2.Text = "";
             this.tenban2.Visible = false;
             // 
+            // dongia1
+            // 
+            this.dongia1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dongia1.Location = new System.Drawing.Point(118, 430);
+            this.dongia1.Name = "dongia1";
+            this.dongia1.Size = new System.Drawing.Size(123, 23);
+            this.dongia1.TabIndex = 119;
+            this.dongia1.Text = "";
+            // 
+            // sl1
+            // 
+            this.sl1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl1.Location = new System.Drawing.Point(118, 404);
+            this.sl1.Name = "sl1";
+            this.sl1.Size = new System.Drawing.Size(123, 20);
+            this.sl1.TabIndex = 120;
+            this.sl1.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(15, 378);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 23);
+            this.label8.TabIndex = 121;
+            this.label8.Text = "Tên món ăn";
+            // 
+            // mon1
+            // 
+            this.mon1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mon1.Location = new System.Drawing.Point(118, 378);
+            this.mon1.Name = "mon1";
+            this.mon1.Size = new System.Drawing.Size(123, 23);
+            this.mon1.TabIndex = 122;
+            this.mon1.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(15, 401);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 23);
+            this.label9.TabIndex = 123;
+            this.label9.Text = "Số lượng";
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(15, 430);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 23);
+            this.label10.TabIndex = 124;
+            this.label10.Text = "Đơn giá";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(258, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.TabIndex = 125;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // mon2
+            // 
+            this.mon2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mon2.Location = new System.Drawing.Point(118, 378);
+            this.mon2.Name = "mon2";
+            this.mon2.Size = new System.Drawing.Size(123, 23);
+            this.mon2.TabIndex = 126;
+            this.mon2.Text = "";
+            // 
+            // mon3
+            // 
+            this.mon3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mon3.Location = new System.Drawing.Point(118, 378);
+            this.mon3.Name = "mon3";
+            this.mon3.Size = new System.Drawing.Size(123, 23);
+            this.mon3.TabIndex = 127;
+            this.mon3.Text = "";
+            // 
+            // mon4
+            // 
+            this.mon4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mon4.Location = new System.Drawing.Point(118, 378);
+            this.mon4.Name = "mon4";
+            this.mon4.Size = new System.Drawing.Size(123, 23);
+            this.mon4.TabIndex = 128;
+            this.mon4.Text = "";
+            // 
+            // sl2
+            // 
+            this.sl2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl2.Location = new System.Drawing.Point(118, 404);
+            this.sl2.Name = "sl2";
+            this.sl2.Size = new System.Drawing.Size(123, 20);
+            this.sl2.TabIndex = 129;
+            this.sl2.Text = "";
+            // 
+            // sl3
+            // 
+            this.sl3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl3.Location = new System.Drawing.Point(118, 404);
+            this.sl3.Name = "sl3";
+            this.sl3.Size = new System.Drawing.Size(123, 20);
+            this.sl3.TabIndex = 130;
+            this.sl3.Text = "";
+            // 
+            // sl4
+            // 
+            this.sl4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl4.Location = new System.Drawing.Point(118, 404);
+            this.sl4.Name = "sl4";
+            this.sl4.Size = new System.Drawing.Size(123, 20);
+            this.sl4.TabIndex = 131;
+            this.sl4.Text = "";
+            // 
+            // dongia2
+            // 
+            this.dongia2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dongia2.Location = new System.Drawing.Point(118, 430);
+            this.dongia2.Name = "dongia2";
+            this.dongia2.Size = new System.Drawing.Size(123, 23);
+            this.dongia2.TabIndex = 132;
+            this.dongia2.Text = "";
+            // 
+            // dongia3
+            // 
+            this.dongia3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dongia3.Location = new System.Drawing.Point(118, 430);
+            this.dongia3.Name = "dongia3";
+            this.dongia3.Size = new System.Drawing.Size(123, 23);
+            this.dongia3.TabIndex = 133;
+            this.dongia3.Text = "";
+            // 
+            // dongia4
+            // 
+            this.dongia4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dongia4.Location = new System.Drawing.Point(118, 430);
+            this.dongia4.Name = "dongia4";
+            this.dongia4.Size = new System.Drawing.Size(123, 23);
+            this.dongia4.TabIndex = 134;
+            this.dongia4.Text = "";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Blue;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(258, 430);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 44);
+            this.button2.TabIndex = 135;
+            this.button2.Text = "Delete Row";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // BaiTap6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 525);
+            this.ClientSize = new System.Drawing.Size(1067, 586);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dongia4);
+            this.Controls.Add(this.dongia3);
+            this.Controls.Add(this.dongia2);
+            this.Controls.Add(this.sl4);
+            this.Controls.Add(this.sl3);
+            this.Controls.Add(this.sl2);
+            this.Controls.Add(this.mon4);
+            this.Controls.Add(this.mon3);
+            this.Controls.Add(this.mon2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.mon1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.sl1);
+            this.Controls.Add(this.dongia1);
             this.Controls.Add(this.tenban2);
             this.Controls.Add(this.tenban3);
             this.Controls.Add(this.tenban4);
@@ -1204,6 +1405,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.RichTextBox dongia1;
+        private System.Windows.Forms.RichTextBox sl1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RichTextBox mon1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox mon2;
+        private System.Windows.Forms.RichTextBox mon3;
+        private System.Windows.Forms.RichTextBox mon4;
+        private System.Windows.Forms.RichTextBox sl2;
+        private System.Windows.Forms.RichTextBox sl3;
+        private System.Windows.Forms.RichTextBox sl4;
+        private System.Windows.Forms.RichTextBox dongia2;
+        private System.Windows.Forms.RichTextBox dongia3;
+        private System.Windows.Forms.RichTextBox dongia4;
+        private System.Windows.Forms.Button button2;
     }
 }
 

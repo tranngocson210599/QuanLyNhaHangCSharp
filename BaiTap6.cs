@@ -12,7 +12,7 @@ namespace BT6
 {
     public partial class BaiTap6 : Form
     {
-       
+        int indexRow;
         public BaiTap6()
         {
             InitializeComponent();
@@ -724,10 +724,7 @@ namespace BT6
                 dataGridView4.Rows.Add(row);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
+        
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
@@ -758,14 +755,14 @@ namespace BT6
             for (int i=0;i<cout;i++)
             {
                 if (dataGridView1.Visible == true)
-                    tong += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+                    tong += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
                 if (dataGridView2.Visible == true)
-                    tong += Convert.ToInt32(dataGridView2.Rows[i].Cells[2].Value);
+                    tong += Convert.ToInt32(dataGridView2.Rows[i].Cells[3].Value);
                 if (dataGridView3.Visible == true)
-                    tong += Convert.ToInt32(dataGridView3.Rows[i].Cells[2].Value);
+                    tong += Convert.ToInt32(dataGridView3.Rows[i].Cells[3].Value);
                 if (dataGridView4.Visible == true)
-                    tong += Convert.ToInt32(dataGridView4.Rows[i].Cells[2].Value);
-               
+                    tong += Convert.ToInt32(dataGridView4.Rows[i].Cells[3].Value);
+              
             }
             richTextBox1.Text = Convert.ToString(tong);
         }
@@ -818,6 +815,23 @@ namespace BT6
             dataGridView1.Visible = true;
             dataGridView2.Visible = false;
             dataGridView3.Visible = false;
+
+            mon1.Visible = true;
+            sl1.Visible = true;
+            dongia1.Visible = true;
+
+            mon2.Visible = false;
+            sl2.Visible = false;
+            dongia2.Visible = false;
+
+            mon3.Visible = false;
+            sl3.Visible = false;
+            dongia3.Visible = false;
+
+            mon4.Visible = false;
+            sl4.Visible = false;
+            dongia4.Visible = false;
+
         }
         //ban2
         private void button55_Click(object sender, EventArgs e)
@@ -843,6 +857,22 @@ namespace BT6
             dataGridView1.Visible = false;
             dataGridView2.Visible = true;
             dataGridView3.Visible = false;
+
+            mon1.Visible = false;
+            sl1.Visible = false;
+            dongia1.Visible = false;
+
+            mon2.Visible = true;
+            sl2.Visible = true;
+            dongia2.Visible = true;
+
+            mon3.Visible = false;
+            sl3.Visible = false;
+            dongia3.Visible = false;
+
+            mon4.Visible = false;
+            sl4.Visible = false;
+            dongia4.Visible = false;
         }
 
         private void ban3_Click(object sender, EventArgs e)
@@ -868,6 +898,22 @@ namespace BT6
             dataGridView1.Visible = false;
             dataGridView2.Visible = false;
             dataGridView3.Visible = true;
+
+            mon1.Visible = false;
+            sl1.Visible = false;
+            dongia1.Visible = false;
+
+            mon2.Visible = false;
+            sl2.Visible = false;
+            dongia2.Visible = false;
+
+            mon3.Visible = true;
+            sl3.Visible = true;
+            dongia3.Visible = true;
+
+            mon4.Visible = false;
+            sl4.Visible = false;
+            dongia4.Visible = false;
         }
 
         private void ban4_Click(object sender, EventArgs e)
@@ -893,6 +939,23 @@ namespace BT6
             dataGridView1.Visible = false;
             dataGridView2.Visible = false;
             dataGridView3.Visible = false;
+
+
+            mon1.Visible = false;
+            sl1.Visible = false;
+            dongia1.Visible = false;
+
+            mon2.Visible = false;
+            sl2.Visible = false;
+            dongia2.Visible = false;
+
+            mon3.Visible = false;
+            sl3.Visible = false;
+            dongia3.Visible = false;
+
+            mon4.Visible = true;
+            sl4.Visible = true;
+            dongia4.Visible = true;
         }
 
         private void hd2_TextChanged(object sender, EventArgs e)
@@ -923,14 +986,19 @@ namespace BT6
                 hd1.Text = "";
                 nhanvien1.Text = "";
                 kh1.Text = "";
-
+                mon1.Text = "";
+                sl1.Text = "";
+                dongia1.Text = "";
             }
             if (dataGridView2.Visible == true)
             {
                 this.dataGridView1.Rows.Clear();
-                hd1.Text = "";
-                nhanvien1.Text = "";
-                kh1.Text = "";
+                hd2.Text = "";
+                nhanvien2.Text = "";
+                kh2.Text = "";
+                mon2.Text = "";
+                sl2.Text = "";
+                dongia2.Text = "";
             }
             if (dataGridView3.Visible == true)
             {
@@ -938,6 +1006,9 @@ namespace BT6
                 hd3.Text = "";
                 nhanvien3.Text = "";
                 kh3.Text = "";
+                mon3.Text = "";
+                sl3.Text = "";
+                dongia3.Text = "";
             }
             if (dataGridView4.Visible == true)
             {
@@ -945,6 +1016,9 @@ namespace BT6
                 hd4.Text = "";
                 nhanvien4.Text = "";
                 kh4.Text = "";
+                mon4.Text = "";
+                sl4.Text = "";
+                dongia4.Text = "";
             }
             richTextBox3.Text = "";
             richTextBox2.Text = "";
@@ -1079,6 +1153,117 @@ namespace BT6
             startY += 30;
             graphic.DrawString("                 Hẹn gặp lại", font, new SolidBrush(Color.Black), startX, startY + offset);
 
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView4.Rows[indexRow];
+            mon4.Text = row.Cells[0].Value.ToString();
+            sl4.Text = row.Cells[1].Value.ToString();
+            dongia4.Text = row.Cells[2].Value.ToString();
+           
+        }
+
+        private void dataGridView5_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+          //  DataGridView row = dataGridView4.Rows[indexRow];
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.Visible == true)
+            {
+                DataGridViewRow newDataRow = dataGridView1.Rows[indexRow];
+                newDataRow.Cells[0].Value = mon1.Text;
+                newDataRow.Cells[1].Value = sl1.Text;
+                newDataRow.Cells[2].Value = dongia1.Text;
+                newDataRow.Cells[3].Value = Convert.ToString(Convert.ToDouble(sl1.Text) * Convert.ToDouble(dongia1.Text));
+
+            }
+            if (dataGridView2.Visible == true)
+            {
+                DataGridViewRow newDataRow = dataGridView2.Rows[indexRow];
+                newDataRow.Cells[0].Value = mon2.Text;
+                newDataRow.Cells[1].Value = sl2.Text;
+                newDataRow.Cells[2].Value = dongia2.Text;
+                newDataRow.Cells[3].Value = Convert.ToString(Convert.ToDouble(sl2.Text) * Convert.ToDouble(dongia2.Text));
+
+            }
+            if (dataGridView3.Visible == true)
+            {
+                DataGridViewRow newDataRow = dataGridView3.Rows[indexRow];
+                newDataRow.Cells[0].Value = mon3.Text;
+                newDataRow.Cells[1].Value = sl3.Text;
+                newDataRow.Cells[2].Value = dongia3.Text;
+                newDataRow.Cells[3].Value = Convert.ToString(Convert.ToDouble(sl3.Text) * Convert.ToDouble(dongia3.Text));
+
+            }
+            if (dataGridView4.Visible == true)
+            {
+                DataGridViewRow newDataRow = dataGridView4.Rows[indexRow];
+                newDataRow.Cells[0].Value = mon4.Text;
+                newDataRow.Cells[1].Value = sl4.Text;
+                newDataRow.Cells[2].Value = dongia4.Text;
+                newDataRow.Cells[3].Value = Convert.ToString(Convert.ToDouble(sl4.Text) * Convert.ToDouble(dongia4.Text));
+
+            }
+
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[indexRow];
+            mon1.Text = row.Cells[0].Value.ToString();
+            sl1.Text = row.Cells[1].Value.ToString();
+            dongia1.Text = row.Cells[2].Value.ToString();
+        }
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView3.Rows[indexRow];
+            mon3.Text = row.Cells[0].Value.ToString();
+            sl3.Text = row.Cells[1].Value.ToString();
+            dongia3.Text = row.Cells[2].Value.ToString();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView2.Rows[indexRow];
+            mon2.Text = row.Cells[0].Value.ToString();
+            sl2.Text = row.Cells[1].Value.ToString();
+            dongia2.Text = row.Cells[2].Value.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int rowIndex;
+            if (dataGridView1.Visible == true)
+            {
+                rowIndex = dataGridView1.CurrentCell.RowIndex;
+                dataGridView1.Rows.RemoveAt(rowIndex);
+
+            }
+            if (dataGridView2.Visible == true)
+            {
+                rowIndex = dataGridView2.CurrentCell.RowIndex;
+                dataGridView2.Rows.RemoveAt(rowIndex);
+
+            }
+            if (dataGridView3.Visible == true)
+            {
+                rowIndex = dataGridView3.CurrentCell.RowIndex;
+                dataGridView3.Rows.RemoveAt(rowIndex);
+            }
+            if (dataGridView4.Visible == true)
+            {
+                rowIndex = dataGridView4.CurrentCell.RowIndex;
+                dataGridView4.Rows.RemoveAt(rowIndex);
+
+            }
         }
     }
 }
